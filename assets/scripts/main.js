@@ -104,7 +104,9 @@ function bindShowMore() {
 
   let showMore = document.querySelector('button');
 
+  // button event
   showMore.addEventListener('click', (event) =>{
+    // show more recipes
     if(showMore.textContent == 'Show more'){
       showMore.textContent = 'Show less';
       for(let i = 3; i < 6; i++){
@@ -115,6 +117,7 @@ function bindShowMore() {
       }
     }
     
+    //show less recipes
     else if(showMore.textContent == 'Show less'){
       showMore.textContent = 'Show more';
       let allrecipes = document.querySelectorAll('recipe-card');
